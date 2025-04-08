@@ -55,6 +55,7 @@ const Footer = () => {
 
           <div className="text-sm text-foreground/60">
             <p>© {new Date().getFullYear()} Apple AI Rebrand. All rights reserved.</p>
+            <p className="mt-1">Developed by Noel Regis</p>
           </div>
         </div>
       </div>
