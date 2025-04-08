@@ -7,9 +7,6 @@ import ProductsSection from "@/components/ProductsSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
-// Install framer-motion
-<lov-add-dependency>framer-motion@latest</lov-add-dependency>
-
 const Index = () => {
   // Smooth scroll implementation
   useEffect(() => {
