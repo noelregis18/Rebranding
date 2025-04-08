@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Apple } from "lucide-react";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
@@ -32,11 +32,7 @@ const Navbar = () => {
     >
       <div className="container-custom flex items-center justify-between">
         <a href="#" className="flex items-center">
-          <div className="w-10 h-10">
-            <svg viewBox="0 0 24 24" className="w-full h-full fill-current text-teal">
-              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/>
-            </svg>
-          </div>
+          <Apple className="h-8 w-8 text-purple" />
           <span className="ml-3 text-xl font-bold font-montserrat tracking-tight">Apple</span>
         </a>
 
@@ -77,21 +73,21 @@ const Navbar = () => {
           <div className="container-custom py-5 flex flex-col space-y-4">
             <a
               href="#about"
-              className="px-3 py-2 text-foreground/80 hover:text-teal"
+              className="px-3 py-2 text-foreground/80 hover:text-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               About
             </a>
             <a
               href="#products"
-              className="px-3 py-2 text-foreground/80 hover:text-teal"
+              className="px-3 py-2 text-foreground/80 hover:text-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Products
             </a>
             <a
               href="#contact"
-              className="px-3 py-2 text-foreground/80 hover:text-teal"
+              className="px-3 py-2 text-foreground/80 hover:text-purple"
               onClick={() => setIsMobileMenuOpen(false)}
             >
               Contact

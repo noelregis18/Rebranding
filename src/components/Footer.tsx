@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Linkedin, Github, Twitter, Mail } from "lucide-react";
+import { Linkedin, Github, Twitter, Mail, Apple } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,14 +9,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="mb-6 md:mb-0">
             <a href="#" className="flex items-center">
-              <div className="w-8 h-8">
-                <svg
-                  viewBox="0 0 24 24"
-                  className="w-full h-full fill-current text-teal"
-                >
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z" />
-                </svg>
-              </div>
+              <Apple className="h-6 w-6 text-purple" />
               <span className="ml-2 text-lg font-bold font-montserrat tracking-tight">
                 Apple
               </span>

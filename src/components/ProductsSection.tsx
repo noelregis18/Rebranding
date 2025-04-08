@@ -8,24 +8,28 @@ const products = [
     title: "iPhone Pro",
     description: "Our most advanced smartphone with a pro camera system and incredible display.",
     image: "https://images.unsplash.com/photo-1591815302525-756a9bcc3425?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80",
+    link: "https://www.apple.com/in/iphone-16-pro/"
   },
   {
     id: 2,
     title: "MacBook Air",
     description: "Impossibly thin design with extraordinary battery life and performance.",
     image: "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1026&q=80",
+    link: "https://www.apple.com/in/macbook-air/?cid=aos-IN-kwgo-mac"
   },
   {
     id: 3,
     title: "Apple Watch",
     description: "Advanced health features, fitness tracking, and seamless connectivity.",
     image: "https://images.unsplash.com/photo-1546868871-7041f2a55e12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1064&q=80",
+    link: "https://www.apple.com/in/watch/"
   },
   {
     id: 4,
     title: "iPad Pro",
     description: "The ultimate iPad experience with incredible display and powerful performance.",
     image: "https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80",
+    link: "https://www.apple.com/in/ipad-pro/"
   },
 ];
 
@@ -41,7 +45,7 @@ const ProductsSection = () => {
           className="max-w-3xl mx-auto text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Our <span className="text-teal">Products</span>
+            Our <span className="text-purple">Products</span>
           </h2>
           <p className="text-foreground/80">
             Explore our lineup of innovative products designed to work seamlessly together, enhancing your digital life.
@@ -68,7 +72,14 @@ const ProductsSection = () => {
                   {product.title}
                 </h3>
                 <p className="text-white/80 mb-4">{product.description}</p>
-                <button className="btn-primary self-start">Learn More</button>
+                <a 
+                  href={product.link} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="btn-primary self-start"
+                >
+                  Learn More
+                </a>
               </div>
             </motion.div>
           ))}

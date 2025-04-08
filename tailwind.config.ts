@@ -57,10 +57,10 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				teal: {
-					DEFAULT: '#1ABC9C',
-					light: '#4CD3BC',
-					dark: '#16A085',
+				purple: {
+					DEFAULT: '#8A2BE2',
+					light: '#9D50BB',
+					dark: '#6A0DAD',
 				},
 				darkbg: {
 					DEFAULT: '#121212',

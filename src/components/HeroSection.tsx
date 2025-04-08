@@ -28,8 +28,8 @@ const HeroSection = () => {
   return (
     <section className="min-h-screen w-full flex items-center justify-center relative overflow-hidden gradient-bg">
       <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-br from-teal/10 via-transparent to-purple-500/10 mix-blend-overlay" />
-        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-teal/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple/10 via-transparent to-blue-500/10 mix-blend-overlay" />
+        <div className="absolute top-0 left-0 right-0 h-64 bg-gradient-to-b from-purple/5 to-transparent" />
         <div className="absolute bottom-0 left-0 right-0 h-64 bg-gradient-to-t from-darkbg/50 to-transparent" />
       </div>
       <div className="container-custom relative z-10 mt-16 md:mt-0">
@@ -42,7 +42,7 @@ const HeroSection = () => {
           <motion.div variants={itemVariants}>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
               Think Different.
-              <span className="text-teal block mt-2">Reimagined.</span>
+              <span className="text-purple block mt-2">Reimagined.</span>
             </h1>
           </motion.div>
           <motion.div variants={itemVariants}>
