@@ -1,12 +1,48 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React, { useEffect } from "react";
+import Navbar from "@/components/Navbar";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import ProductsSection from "@/components/ProductsSection";
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+
+// Install framer-motion
+<lov-add-dependency>framer-motion@latest</lov-add-dependency>
 
 const Index = () => {
+  // Smooth scroll implementation
+  useEffect(() => {
+    const handleHashLinkClick = (e: MouseEvent) => {
+      const target = e.target as HTMLElement;
+      const anchor = target.closest('a');
+      
+      if (anchor && anchor.hash && anchor.hash.startsWith('#')) {
+        e.preventDefault();
+        const element = document.querySelector(anchor.hash);
+        if (element) {
+          window.scrollTo({
+            behavior: 'smooth',
+            top: element.getBoundingClientRect().top + window.scrollY - 100
+          });
+        }
+      }
+    };
+
+    document.addEventListener('click', handleHashLinkClick);
+    return () => document.removeEventListener('click', handleHashLinkClick);
+  }, []);
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen w-full overflow-x-hidden dark:bg-darkbg bg-white">
+      <Navbar />
+      <main>
+        <HeroSection />
+        <AboutSection />
+        <ProductsSection />
+        <ContactSection />
+      </main>
+      <Footer />
     </div>
   );
 };
